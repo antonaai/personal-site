@@ -151,20 +151,25 @@ img {
     background-color: $brand-gray;
     width: 248.75px;
     position: fixed;
-    overflow: scroll;
+    overflow: hidden;
     overflow-x: hidden;
+
+
 
     img {
         border-radius: 50%;
         width: 80%;
         margin: 0 auto;
-        margin-bottom: 2em;
+        margin-bottom: 10px;
     }
 
     h3 {
-        font-size: 27px;
-        font-family: $font-secondary;
+        font-size: 31px;
+        font-family: "Playfair Display",
+            Georgia,
+            serif;
         padding: 7px 0;
+        line-height: 34px
     }
 
     h4 {
@@ -201,6 +206,17 @@ img {
             }
         }
     }
+
+    .languages {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 15px;
+        padding: 0 15px;
+
+        img {
+            width: 35px;
+        }
+    }
 }
 
 #main {
@@ -228,6 +244,8 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+
 
     #intro-text {
         width: 100%;
@@ -318,6 +336,9 @@ img {
         padding: 2em 2em;
         width: 23%;
         background-color: #fff;
+        -webkit-box-shadow: 0px 0px 97px -47px rgba(0, 0, 0, 0.52);
+        -moz-box-shadow: 0px 0px 97px -47px rgba(0, 0, 0, 0.52);
+        box-shadow: 0px 0px 97px -47px rgba(0, 0, 0, 0.52);
 
         i {
             display: block;
@@ -361,6 +382,9 @@ img {
     background-color: #fff;
     margin-bottom: 40px;
     text-align: center;
+    -webkit-box-shadow: 13px 12px 17px -9px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 13px 12px 17px -9px rgba(0, 0, 0, 0.4);
+    box-shadow: 13px 12px 17px -9px rgba(0, 0, 0, 0.4);
 
     i {
         font-size: 30px;
@@ -464,6 +488,9 @@ img {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.52);
+        -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.52);
+        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.52);
 
 
         .portfolio-text {
@@ -489,20 +516,29 @@ img {
             }
         }
     }
+
     .thumbnail:nth-child(1) {
         background-image: url("../images/spaghetti-bg.jpg");
     }
+
     .thumbnail:nth-child(2) {
         background-image: url("../images/incontri-bg.jpeg");
     }
+
     .thumbnail:nth-child(3) {
         background-image: url("../images/master-mind-bg.jpg");
     }
+
     .thumbnail:nth-child(4) {
         background-image: url("../images/credit-card-bg.jpg");
     }
+
     .thumbnail:nth-child(5) {
         background-image: url("../images/blackjack.jpg");
+    }
+
+    .thumbnail:nth-child(6) {
+        background-image: url("../images/isabelle.jpg");
     }
 
 
@@ -579,6 +615,7 @@ img {
 progress {
     vertical-align: baseline;
 }
+
 @-webkit-keyframes progress-bar-stripes {
     from {
         background-position: 1rem 0;
@@ -659,7 +696,7 @@ progress {
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .progress-row {
         .col-6 {
             width: 100%;

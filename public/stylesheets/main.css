@@ -112,7 +112,7 @@ img {
   background-color: #f2f3f7;
   width: 248.75px;
   position: fixed;
-  overflow: scroll;
+  overflow: hidden;
   overflow-x: hidden;
 }
 
@@ -120,13 +120,14 @@ img {
   border-radius: 50%;
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 2em;
+  margin-bottom: 10px;
 }
 
 #side-menu h3 {
-  font-size: 27px;
-  font-family: "Playfair Display", Georgia, serif;
+  font-size: 31px;
+  font-family: "Playfair Display", Georgia, serif;
   padding: 7px 0;
+  line-height: 34px;
 }
 
 #side-menu h4 {
@@ -162,6 +163,19 @@ img {
 #side-menu ul li a:hover {
   color: #000;
   border-bottom: 1px solid #2c98f0;
+}
+
+#side-menu .languages {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 15px;
+  padding: 0 15px;
+}
+
+#side-menu .languages img {
+  width: 35px;
 }
 
 #main {
@@ -292,6 +306,8 @@ img {
   padding: 2em 2em;
   width: 23%;
   background-color: #fff;
+  -webkit-box-shadow: 0px 0px 97px -47px rgba(0, 0, 0, 0.52);
+  box-shadow: 0px 0px 97px -47px rgba(0, 0, 0, 0.52);
 }
 
 .box .squares-row .square i {
@@ -331,6 +347,8 @@ img {
   background-color: #fff;
   margin-bottom: 40px;
   text-align: center;
+  -webkit-box-shadow: 13px 12px 17px -9px rgba(0, 0, 0, 0.4);
+  box-shadow: 13px 12px 17px -9px rgba(0, 0, 0, 0.4);
 }
 
 .experties-row .skill-box i {
@@ -455,6 +473,8 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.52);
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.52);
 }
 
 .portfolio-row .thumbnail .portfolio-text {
@@ -498,6 +518,10 @@ img {
 
 .portfolio-row .thumbnail:nth-child(5) {
   background-image: url("../images/blackjack.jpg");
+}
+
+.portfolio-row .thumbnail:nth-child(6) {
+  background-image: url("../images/isabelle.jpg");
 }
 
 .portfolio-row #load-more {
