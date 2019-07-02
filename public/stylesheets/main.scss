@@ -879,8 +879,6 @@ $xs-breakpoint: 576px;
 }
 
 @media screen and (max-width: $phone-breakpoint) {
-
-
     #main #intro {
         height: 95vh;
     }
@@ -898,6 +896,6 @@ $xs-breakpoint: 576px;
         padding: 0px 13px;
         font-size: 15px;
         line-height: 50px;
-        width: 117px;
+        width: 130px;
     }
 }
