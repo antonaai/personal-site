@@ -142,8 +142,8 @@ img {
     background-color: $brand-gray;
     width: 248.75px;
     position: fixed;
-    overflow: hidden;
-    overflow-x: hidden;
+    overflow-y: scroll;
+
 
 
 
@@ -464,6 +464,7 @@ img {
 
             p {
                 color: $brand-gray;
+                font-size: 0.9em;
             }
         }
     }
@@ -674,7 +675,70 @@ progress {
     background-color: #4054b2;
 }
 
-@media screen and (max-width: 768px) {
+$tablet-breakpoint: 992px;
+$phone-breakpoint: 767px;
+$xs-breakpoint: 576px;
+
+@media screen and (max-width: $tablet-breakpoint) {
+    #side-menu {
+        display: none;
+    }
+
+    #main .mobile-show {
+        display: flex;
+        position: fixed;
+        background-color: #f9f6f077;
+        z-index: 1;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    #main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #main #intro #intro-text {
+        padding: 15em 5em;
+    }
+
+    #main #intro #intro-text p {
+        font-size: 30px;
+        line-height: 93px;
+    }
+
+    #main #intro #intro-text a {
+        font-size: 18px;
+        text-align: center;
+        width: 170px;
+    }
+
+    #main #intro #intro-text h1 {
+        font-size: 65px;
+        line-height: 85px;
+    }
+
+    #main .mobile-show a img {
+        width: 43px;
+    }
+
+    .box .squares-row {
+        flex-wrap: wrap;
+    }
+
+    .experties-row .skill-box {
+        width: 48%;
+    }
+
+    .box .squares-row .square {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: $phone-breakpoint) {
 
     .col-2,
     .col-3,
@@ -762,5 +826,78 @@ progress {
                 font-weight: 400;
             }
         }
+    }
+
+    .portfolio-row .thumbnail .portfolio-text a {
+        font-size: 1.4em;
+        line-height: 30px;
+    }
+
+    #main #intro #intro-text {
+        padding: 5em 5em;
+    }
+
+    #main #intro #intro-text p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    #main #intro #intro-text a {
+        font-size: 18px;
+        text-align: center;
+        width: 170px;
+    }
+
+    #main #intro #intro-text h1 {
+        font-size: 65px;
+        line-height: 85px;
+    }
+
+    #main .mobile-show {
+        padding: 0;
+        width: 100%;
+        position: static;
+    }
+
+    #main .mobile-show a img {
+        width: 20px;
+    }
+
+    .box .squares-row {
+        flex-wrap: wrap;
+    }
+
+    .experties-row .skill-box {
+        width: 100%;
+    }
+
+    .box .squares-row .square {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: $phone-breakpoint) {
+
+
+    #main #intro {
+        height: 95vh;
+    }
+
+    #main #intro #intro-text {
+        padding: 5em 2em;
+    }
+
+    #main #intro #intro-text h1 {
+        font-size: 35px;
+        line-height: 56px;
+    }
+
+    #main #intro #intro-text a {
+        padding: 0px 13px;
+        font-size: 15px;
+        line-height: 50px;
+        width: 117px;
     }
 }

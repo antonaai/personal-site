@@ -102,8 +102,7 @@ img {
   background-color: #f2f3f7fb;
   width: 248.75px;
   position: fixed;
-  overflow: hidden;
-  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 #side-menu img {
@@ -455,6 +454,7 @@ img {
 
 .portfolio-row .thumbnail .portfolio-text p {
   color: #f2f3f7fb;
+  font-size: 0.9em;
 }
 
 .portfolio-row .thumbnail:nth-child(1) {
@@ -657,7 +657,58 @@ progress {
   background-color: #4054b2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+  #side-menu {
+    display: none;
+  }
+  #main .mobile-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    background-color: #f9f6f077;
+    z-index: 1;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  #main {
+    margin-left: 0;
+    width: 100%;
+  }
+  #main #intro #intro-text {
+    padding: 15em 5em;
+  }
+  #main #intro #intro-text p {
+    font-size: 30px;
+    line-height: 93px;
+  }
+  #main #intro #intro-text a {
+    font-size: 18px;
+    text-align: center;
+    width: 170px;
+  }
+  #main #intro #intro-text h1 {
+    font-size: 65px;
+    line-height: 85px;
+  }
+  #main .mobile-show a img {
+    width: 43px;
+  }
+  .box .squares-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .experties-row .skill-box {
+    width: 48%;
+  }
+  .box .squares-row .square {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .col-2,
   .col-3,
   .col-4,
@@ -726,6 +777,64 @@ progress {
     font-size: 16px;
     margin-bottom: 7.5px;
     font-weight: 400;
+  }
+  .portfolio-row .thumbnail .portfolio-text a {
+    font-size: 1.4em;
+    line-height: 30px;
+  }
+  #main #intro #intro-text {
+    padding: 5em 5em;
+  }
+  #main #intro #intro-text p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  #main #intro #intro-text a {
+    font-size: 18px;
+    text-align: center;
+    width: 170px;
+  }
+  #main #intro #intro-text h1 {
+    font-size: 65px;
+    line-height: 85px;
+  }
+  #main .mobile-show {
+    padding: 0;
+    width: 100%;
+    position: static;
+  }
+  #main .mobile-show a img {
+    width: 20px;
+  }
+  .box .squares-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .experties-row .skill-box {
+    width: 100%;
+  }
+  .box .squares-row .square {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #main #intro {
+    height: 95vh;
+  }
+  #main #intro #intro-text {
+    padding: 5em 2em;
+  }
+  #main #intro #intro-text h1 {
+    font-size: 35px;
+    line-height: 56px;
+  }
+  #main #intro #intro-text a {
+    padding: 0px 13px;
+    font-size: 15px;
+    line-height: 50px;
+    width: 117px;
   }
 }
 /*# sourceMappingURL=main.css.map */
