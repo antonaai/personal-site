@@ -114,7 +114,9 @@ img {
 
 #side-menu h3 {
   font-size: 31px;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Playfair Display",
+ Georgia,
+ serif;
   padding: 7px 0;
   line-height: 34px;
 }
@@ -833,8 +835,8 @@ progress {
   #main #intro #intro-text a {
     padding: 0px 13px;
     font-size: 15px;
-    line-height: 50px;
-    width: 130px;
+    line-height: 40px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
