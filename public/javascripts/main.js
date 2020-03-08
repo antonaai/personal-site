@@ -12,15 +12,3 @@ $('.thumbnail').mouseover(function () {
 $('.thumbnail').mouseleave(function () {
     $(this).find('.portfolio-text').slideUp('slow');
 });
-
-let slideN = 1;
-
-$('#load-more').click(function () {
-    slideN++;
-    $('.more-content').slideToggle('slow');
-    if (slideN % 2 === 0) {
-        $(this).text('Show Less');
-    } else {
-        $(this).text('Load More');
-    }
-});

@@ -459,6 +459,10 @@ img {
   font-size: 0.9em;
 }
 
+.portfolio-row .thumbnail#fago {
+  background-image: url("../images/joker-1.jpeg");
+}
+
 .portfolio-row .thumbnail:nth-child(1) {
   background-image: url("../images/spaghetti-bg.jpg");
 }
