@@ -395,6 +395,10 @@ img {
   margin-bottom: 0;
 }
 
+.education-row .experience-text {
+  padding-bottom: 16px;
+}
+
 .education-row .caption {
   padding: 15px 20px;
   border: 1px solid rgba(0, 0, 0, 0.1);
