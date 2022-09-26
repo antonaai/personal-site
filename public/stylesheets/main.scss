@@ -73,6 +73,10 @@ body {
     overflow-x: hidden;
 }
 
+.ml-3 {
+    margin-left: 1rem;
+}
+
 i {
     color: black;
 }
@@ -420,11 +424,7 @@ img {
     cursor: pointer;
 }
 
-#one .caption {
-    display: block;
-}
-
-.active {
+.edu-intro.active {
     background-color: $brand-color-1;
     color: white;
 }
@@ -898,4 +898,8 @@ $xs-breakpoint: 576px;
         line-height: 50px;
         width: 130px;
     }
+}
+
+.education-row.active .caption {
+    display: block;
 }

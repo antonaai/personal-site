@@ -1,4 +1,4 @@
-$('#education .education-row').click((e) => {
+$('.education-row').click((e) => {
     var el = e.currentTarget;
     var intro = el.querySelector('.edu-intro');
     var caption = el.querySelector('.caption');
